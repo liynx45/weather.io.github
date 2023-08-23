@@ -1,0 +1,255 @@
+:root {
+    --primary-color: #4682A9;
+    --secondary-color: #749BC2;
+    --background-color: #D5FFE4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    justify-content: center;
+}
+
+.main-menu {
+    width: 550px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+}
+
+.current-weather {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    width: 85%;
+    height: 500px;
+    border-radius: 25px;
+}
+
+.main-temp {
+    font-size: 65px;
+}
+
+.current-weather img {
+    width: 200px;
+    height: 200px;
+}
+
+.bottom-current {
+    width: 100%;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.detail-blok {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-blok i {
+    font-size: 25px;
+}
+
+.input-menu {
+    width: 85%;
+    height: 30%;
+    padding: 10px;
+    margin: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    font-size: 25px;
+    color: var(--primary-color);
+}
+
+.input-city {
+    width: 100%;
+    position: relative;
+}
+
+.input-city input {
+    width: 100%;
+    padding: 10px 10px 10px 30px;
+    border-radius: 50px;
+    color: var(--primary-color);
+    outline: none;
+    border: none;
+    outline: 1px solid var(--primary-color);
+}
+.input-city input:focus {
+    background-color: var(--primary-color);
+    color: white;
+}
+.input-city i {
+    position: absolute;
+    left: 5px;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 8px;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+.input-city input:focus + i{
+    color: white;
+}
+.btn-search{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    color: white;
+    background-color: var(--primary-color);
+}
+.line{
+    width: 100%;
+    height: 2px;
+    border-top: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    margin: 10px 0;
+}
+.btn-current-location{
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+}
+.btn-search:active,
+.btn-current-location:active{
+    scale: .98;
+}
+.main-right{
+    height: 100vh;
+    padding: 25px;
+    width: 650px;
+}
+.weather-menu{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    overflow: scroll;
+    gap: 10px;
+    
+}
+.weather-menu::-webkit-scrollbar{
+    display: none;
+}
+.weather-panel{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    width: 100%;
+    height: 150px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+.left-panel{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    color: white;
+}
+.bottom-panel{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.bottom-panel i{
+    font-size: 17px;
+}
+.temp{
+    font-size: 50px;
+}
+.right-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.right-panel img{
+    width: 110px;
+    height: 110px;
+}
+.left-logo{
+    font-size: 29px;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding: 5px;
+}
+.right-logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding: 20px;
+    margin-left: 25px;
+}
+@media screen and (max-width: 728px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .main-menu{
+        width: 550px;
+    }
+    .current-weather {
+        width: 80vw;
+    }
+    .input-menu{
+        width: 80vw;
+    }
+    .main-right{
+        height: auto;
+        width: 95vw;
+    }
+    .weather-menu{
+        width: 100%;
+    }
+    .weather-panel{
+        width: 100%;
+    }
+    .right-logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .temp{
+        font-size: 40px;
+    }
+    .bottom-panel{
+        font-size: 10px;
+    }
+}

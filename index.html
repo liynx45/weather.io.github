@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="main-menu">
+      <span class="left-logo">Weather App</span>
+      <div class="current-weather">
+        <span>----</span>
+        
+        <span> ---</span>
+        <span class="main-temp">-°C</span>
+        <div class="bottom-current">
+          <div class="detail-blok">
+            <i class="uil uil-wind-sun"></i>
+            <span>Wind -- M/s</span>
+          </div>
+          <div class="detail-blok">
+            <i class="uil uil-tear"></i>
+            <span>Humidity--</span>
+          </div>
+        </div>
+      </div>
+      <div class="input-menu">
+        <span class="logo">Search Location</span>
+        <div class="input-city">
+          <i class="uil uil-location-point"></i>
+          <input type="text" placeholder="Masukan lokasi" class="input-value">
+        </div>
+        <button class="btn-search">Search</button>
+        <div class="line"></div>
+        <button class="btn-current-location">Use Current Location</button>
+      </div>
+    </div>
+    <div class="main-right">
+      <span class="right-logo">Weather Forecast</span>
+      <div class="weather-menu">
+        <div class="weather-panel">
+          <div class="left-panel">
+            <span>31°C</span>
+            <span class="date-panel">---</span>
+            <div class="bottom-panel">
+              <div class="wind-panel">
+                <i class="uil uil-wind-sun"></i>
+                <span>Wind --- M/s</span>
+              </div>
+              <div class="humidity-panel">
+                <i class="uil uil-tear"></i>
+                <span>Humidity --- %</span>
+              </div>
+            </div>
+          </div>
+          <div class="right-panel">
+            <span class="description"> --- </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
