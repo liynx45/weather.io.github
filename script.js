@@ -132,3 +132,12 @@ inputCity.addEventListener( "keydown", (e) => {
 btnLocation.addEventListener("click", () => {
   currentLocation();
 })
+document.addEventListener("DOMContentLoaded", () => {
+  const localIcon = document.querySelector(".uil-location-point");
+  inputCity.addEventListener("focus", () => {
+    localIcon.style.color = "white";
+  });
+  inputCity.addEventListener("blur", () => {
+    localIcon.style.color = "#4682A9";
+  })
+});
